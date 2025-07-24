@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const deviceInfo = navigator.platform;
+      const browserInfo = navigator.userAgent;
+
+      setTimeout(() => {
+        const inputDevice = parent.document.querySelector("input[title='DeviceInput']");
+        const inputBrowser = parent.document.querySelector("input[title='BrowserInput']");
+        if(inputDevice) inputDevice.value = deviceInfo;
+        if(inputBrowser) inputBrowser.value = browserInfo;
+      }, 1000);
+    </script>
+  </body>
+</html>
